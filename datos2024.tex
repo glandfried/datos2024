@@ -1,0 +1,229 @@
+\newif\ifen
+\newif\ifes
+\newif\iffr
+\newcommand{\fr}[1]{\iffr#1 \fi}
+\newcommand{\En}[1]{\ifen#1\fi}
+\newcommand{\Es}[1]{\ifes#1\fi}
+\estrue
+\documentclass[shownotes,aspectratio=169]{beamer}
+
+\usepackage{siunitx}
+\input{diapo_encabezado.tex}
+\input{tikzlibrarybayesnet.code.tex}
+ \mode<presentation>
+ {
+ %   \usetheme{Madrid}      % or try Darmstadt, Madrid, Warsaw, ...
+ %   \usecolortheme{default} % or try albatross, beaver, crane, ...
+ %   \usefonttheme{serif}  % or try serif, structurebold, ...
+  \usetheme{Antibes}
+  \setbeamertemplate{navigation symbols}{}
+ }
+\estrue
+\usepackage{todonotes}
+\setbeameroption{show notes}
+%
+\newcommand{\gray}{\color{black!55}}
+\usepackage{ulem} % sout
+\usepackage{mdframed}
+\usepackage{comment}
+\usepackage{listings}
+\lstset{
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=true,
+  columns=flexible,
+  basicstyle={\ttfamily},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4,
+  showlines=true
+}
+
+
+\begin{document}
+
+\color{black!85}
+\large
+
+\begin{frame}[plain,noframenumbering]
+
+
+\begin{textblock}{160}(0,0)
+\includegraphics[width=1\textwidth]{static/deforestacion}
+\end{textblock}
+
+\begin{textblock}{80}(22,10)
+\textcolor{black!15}{\fontsize{44}{55}\selectfont Causal}
+\end{textblock}
+
+\begin{textblock}{47}(95,70)
+\centering \textcolor{black!15}{{\fontsize{52}{65}\selectfont Artificial}}
+\end{textblock}
+
+\begin{textblock}{80}(100,28)
+\LARGE  \textcolor{black!15}{\rotatebox[origin=tr]{-3}{\scalebox{9}{\scalebox{1}[-1]{$p$}}}}
+\end{textblock}
+
+
+\begin{textblock}{80}(66,43)
+\LARGE  \textcolor{black!15}{\scalebox{6}{$=$}}
+\end{textblock}
+
+\begin{textblock}{80}(36,29)
+\LARGE  \textcolor{black!15}{\scalebox{9}{$p$}}
+\end{textblock}
+
+ \vspace{2cm}
+\maketitle
+
+
+
+\begin{textblock}{160}(01,67)
+\normalsize \textcolor{black!5}{Inteligencia Artificial vs Causal}
+\end{textblock}
+
+% Lugar
+\begin{textblock}{160}(01,73)
+\scriptsize \textcolor{black!5}{
+Gustavo Landfried. \\
+Jueves 12 de septiembre 2024 \\
+Laboratorios de Métodos Bayesianos. \\
+Facultad de Ciencias Exactas y Naturales \\
+Universidad de Buenos Aires, Argentina}
+\end{textblock}
+
+\end{frame}
+
+
+
+\begin{frame}[plain]
+\begin{textblock}{170}(00,0) \centering
+\includegraphics[width=1\textwidth]{static/agua.jpg}
+\end{textblock}
+
+\begin{textblock}{160}(00,04) \centering
+\LARGE Las cualidades de los sistemas naturales \\ \Large
+emergen de la interacción entre sus partes
+\end{textblock}
+\vspace{1cm} \Large
+
+
+
+\begin{textblock}{155}(00,26) \centering
+\includegraphics[width=0.7\textwidth]{static/atomo_de_oxigeno.png}
+\end{textblock}
+
+\end{frame}
+
+
+\begin{frame}[plain]
+\begin{textblock}{160}(0,4)
+ \centering \LARGE Cooperación \\
+ \Large Células que viven en células
+\end{textblock}
+\vspace{1.3cm} \centering
+
+\includegraphics[width=1\textwidth]{static/cloroplastos}
+
+\end{frame}
+
+\begin{frame}[plain]
+\begin{textblock}{160}(0,4)
+ \centering \LARGE Cooperación \\
+ \Large Organismos multicelulares
+\end{textblock}
+\vspace{1.3cm} \centering
+
+\includegraphics[width=1\textwidth]{static/fotosintesis}
+
+\end{frame}
+
+\begin{frame}[plain]
+\begin{textblock}{160}(0,4)
+ \centering \LARGE Cooperación \\
+ \Large Sistemas sociales
+\end{textblock}
+\vspace{1.3cm} \centering
+
+\includegraphics[width=1\textwidth]{static/hormigas2}
+
+\end{frame}
+
+\begin{frame}[plain]
+\begin{textblock}{160}(0,4)
+ \centering \LARGE Cooperación \\
+ \Large Ecosistema
+\end{textblock}
+\vspace{1.5cm} \centering
+
+\includegraphics[width=0.75\textwidth]{static/tsimane}
+
+\end{frame}
+
+
+\begin{frame}[plain]
+\begin{textblock}{160}(0,4)
+ \centering \LARGE La complejidad de la vida
+\end{textblock}
+\vspace{1.7cm} \centering
+
+
+
+
+\scalebox{1.5}{
+\tikz{
+    \node[accion] (i1) {} ;
+    \node[accion, yshift=0.6cm, xshift=0.4cm] (i2) {} ;
+    \node[accion, yshift=0.6cm, xshift=-0.4cm] (i3) {} ;
+    \node[const, yshift=0.3cm, xshift=0.4cm] (i) {};
+
+    \node[const, yshift=-0.8cm] (ni) {$\hfrac{\text{Individuos}}{\text{solitarios}}$};
+
+    \node[const, yshift=1.2cm, xshift=1.5cm] (m1) {$\hfrac{\text{Formación}}{\text{de grupos}}$};
+
+    \node[const, right=of i, xshift=2cm] (c) {};
+    \node[accion, below=of c, yshift=0.35cm, xshift=0.4cm] (c1) {} ;
+    \node[accion, above=of c, yshift=-0.35cm, xshift=0.6cm] (c2) {} ;
+    \node[accion, above=of c, yshift=-0.35cm, xshift=0.2cm] (c3) {} ;
+    \node[const, right=of c, xshift=0.6cm] (cc) {};
+
+    \node[const, right=of ni, xshift=1.3cm] (nc) {$\hfrac{\text{Grupos}}{\text{cooperativos}}$};
+
+    \node[const, right=of m1, xshift=1.2cm] (m2) {$\hfrac{\text{Transición}}{\text{mayor}}$};
+
+    \node[const, right=of cc, xshift=2cm] (t) {};
+    \node[accion, below=of t, yshift=0.35cm, xshift=0.4cm] (t1) {} ;
+    \node[accion, above=of t, yshift=-0.35cm, xshift=0.6cm] (t2) {} ;
+    \node[accion, above=of t, yshift=-0.35cm, xshift=0.2cm] (t3) {} ;
+
+    \node[const, right=of nc, xshift=1.1cm] (nt) {$\hfrac{\text{Unidad de}}{\text{nivel superior}}$};
+
+    \edge {i} {c};
+    \edge {cc} {t};
+
+    \plate {transition} {(t1)(t2)(t3)} {}; %
+    }
+}
+
+
+\end{frame}
+
+\begin{frame}[plain,noframenumbering]
+\centering \vspace{0.5cm}
+\includegraphics[width=0.66\textwidth]{static/Metodos2.png}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
+

@@ -1,4 +1,12 @@
-all: Metodos2.png BP.png modelosGraficos.jpeg peligro_predador.jpeg fuego.jpg antartic.jpeg tsimane.jpg treeOfLife-liviano.png reciprocidad.jpeg regalo.png dedo.png cerradura.png deforestacion.jpg pachacuteckoricancha.jpg sidewalk_bubblegum_1997_4.png moneda-euro-liviana.png galton-board.jpg Elo1980.jpg boole.png sum_product.png test_chagas.png lifeHistory.jpeg biomassBarOn.png plata-potosi.jpg ttt_history.png python.png julia.png R.png cara-emoji.png cloroplastos.jpg fotosintesis.jpg hormigas2.jpg tsimane2.jpg messi_datos.jpeg
+all: agua.jpg atomo_de_oxigeno.png Metodos2.png BP.png modelosGraficos.jpeg peligro_predador.jpeg fuego.jpg antartic.jpeg tsimane.jpg treeOfLife-liviano.png reciprocidad.jpeg regalo.png dedo.png cerradura.png deforestacion.jpg pachacuteckoricancha.jpg sidewalk_bubblegum_1997_4.png moneda-euro-liviana.png galton-board.jpg Elo1980.jpg boole.png sum_product.png test_chagas.png lifeHistory.jpeg biomassBarOn.png plata-potosi.jpg ttt_history.png python.png julia.png R.png cara-emoji.png cloroplastos.jpg fotosintesis.jpg hormigas2.jpg tsimane2.jpg messi_datos.jpeg
+
+
+agua.jpg:
+	wget https://raw.githubusercontent.com/glandfried/images/master/agua.jpg -O agua.jpg
+
+
+atomo_de_oxigeno.png:
+	wget https://raw.githubusercontent.com/glandfried/images/master/atomo_de_oxigeno.png -O atomo_de_oxigeno.png
 
 messi_datos.jpeg:
 	wget https://raw.githubusercontent.com/glandfried/images/master/messi_datos.jpeg -O messi_datos.jpeg
