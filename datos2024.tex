@@ -60,7 +60,7 @@
 \centering \textcolor{black!15}{{\fontsize{52}{65}\selectfont Artificial}}
 \end{textblock}
 
-\begin{textblock}{80}(100,28)
+\begin{textblock}{80}(96,28)
 \LARGE  \textcolor{black!15}{\rotatebox[origin=tr]{-3}{\scalebox{9}{\scalebox{1}[-1]{$p$}}}}
 \end{textblock}
 
@@ -101,6 +101,7 @@ Universidad de Buenos Aires, Argentina}
 \includegraphics[width=1\textwidth]{static/agua.jpg}
 \end{textblock}
 
+
 \begin{textblock}{160}(00,04) \centering
 \LARGE Las cualidades de los sistemas naturales \\ \Large
 emergen de la interacción entre sus partes
@@ -115,62 +116,15 @@ emergen de la interacción entre sus partes
 
 \end{frame}
 
-
 \begin{frame}[plain]
 \begin{textblock}{160}(0,4)
- \centering \LARGE Cooperación \\
- \Large Células que viven en células
+ \centering \LARGE La complejidad de la vida \\ \Large
+\only<5>{Células que viven en células}\only<6>{Organismos multicelulares}\only<7>{Sociedades}\only<8>{Ecosistemas}
 \end{textblock}
-\vspace{1.3cm} \centering
 
-\includegraphics[width=1\textwidth]{static/cloroplastos}
-
-\end{frame}
-
-\begin{frame}[plain]
-\begin{textblock}{160}(0,4)
- \centering \LARGE Cooperación \\
- \Large Organismos multicelulares
-\end{textblock}
-\vspace{1.3cm} \centering
-
-\includegraphics[width=1\textwidth]{static/fotosintesis}
-
-\end{frame}
-
-\begin{frame}[plain]
-\begin{textblock}{160}(0,4)
- \centering \LARGE Cooperación \\
- \Large Sistemas sociales
-\end{textblock}
-\vspace{1.3cm} \centering
-
-\includegraphics[width=1\textwidth]{static/hormigas2}
-
-\end{frame}
-
-\begin{frame}[plain]
-\begin{textblock}{160}(0,4)
- \centering \LARGE Cooperación \\
- \Large Ecosistema
-\end{textblock}
-\vspace{1.5cm} \centering
-
-\includegraphics[width=0.75\textwidth]{static/tsimane}
-
-\end{frame}
-
-
-\begin{frame}[plain]
-\begin{textblock}{160}(0,4)
- \centering \LARGE La complejidad de la vida
-\end{textblock}
-\vspace{1.7cm} \centering
-
-
-
-
-\scalebox{1.5}{
+\only<1-4>{
+\begin{textblock}{160}(0,25)\centering
+\scalebox{1.33}{
 \tikz{
     \node[accion] (i1) {} ;
     \node[accion, yshift=0.6cm, xshift=0.4cm] (i2) {} ;
@@ -179,6 +133,7 @@ emergen de la interacción entre sus partes
 
     \node[const, yshift=-0.8cm] (ni) {$\hfrac{\text{Individuos}}{\text{solitarios}}$};
 
+    \onslide<2->{
     \node[const, yshift=1.2cm, xshift=1.5cm] (m1) {$\hfrac{\text{Formación}}{\text{de grupos}}$};
 
     \node[const, right=of i, xshift=2cm] (c) {};
@@ -186,8 +141,10 @@ emergen de la interacción entre sus partes
     \node[accion, above=of c, yshift=-0.35cm, xshift=0.6cm] (c2) {} ;
     \node[accion, above=of c, yshift=-0.35cm, xshift=0.2cm] (c3) {} ;
     \node[const, right=of c, xshift=0.6cm] (cc) {};
-
     \node[const, right=of ni, xshift=1.3cm] (nc) {$\hfrac{\text{Grupos}}{\text{cooperativos}}$};
+    }
+
+    \onslide<3->{
 
     \node[const, right=of m1, xshift=1.2cm] (m2) {$\hfrac{\text{Transición}}{\text{mayor}}$};
 
@@ -197,16 +154,117 @@ emergen de la interacción entre sus partes
     \node[accion, above=of t, yshift=-0.35cm, xshift=0.2cm] (t3) {} ;
 
     \node[const, right=of nc, xshift=1.1cm] (nt) {$\hfrac{\text{Unidad de}}{\text{nivel superior}}$};
+    }
 
+    \onslide<2->{
     \edge {i} {c};
+    }
+
+    \onslide<3->{
     \edge {cc} {t};
 
     \plate {transition} {(t1)(t2)(t3)} {}; %
     }
 }
+}
+
+\vspace{1cm}
+\Large
+\only<4>{Nuestra propia vida dependen de 4 niveles de cooperación.}
+\end{textblock}
+}
+
+\only<5>{
+\begin{textblock}{160}(0,20)\centering
+\includegraphics[width=1.05\textwidth]{static/cloroplastos}
+\end{textblock}
+}
+
+\only<6>{
+\begin{textblock}{160}(0,20)\centering
+\includegraphics[width=1\textwidth]{static/fotosintesis}
+\end{textblock}
+}
+
+\only<7>{
+\begin{textblock}{160}(0,20)\centering
+\includegraphics[width=1\textwidth]{static/hormigas2}
+\end{textblock}
+}
+
+\only<8>{
+\begin{textblock}{160}(0,20)\centering
+\includegraphics[width=1\textwidth]{static/tsimane}
+\end{textblock}
+}
+
+
+\only<9-10>{
+\begin{textblock}{150}(05,20)\centering
+\includegraphics[width=1\textwidth]{static/biomassBarOn.png}
+\end{textblock}
+}
+
+\only<9>{
+\begin{textblock}{150}(62.8,20)
+\scalebox{1.33}{
+\tikz{
+  \node[factor, color=white, minimum size=4cm] (a1) {};
+}}
+\end{textblock}
+}
+
+
+\only<9>{
+\begin{textblock}{150}(80,20)
+\scalebox{1.33}{
+\tikz{
+  \node[factor, color=white, minimum size=8cm] (a1) {};
+}}
+\end{textblock}
+}
 
 
 \end{frame}
+
+
+\begin{frame}[plain]
+\only<1>{
+\begin{textblock}{160}(0,10)\centering
+ \rotatebox{-90}{
+ \includegraphics[width=0.51\textwidth]{static/cerebros.jpg}}
+\end{textblock}
+}
+\only<2>{
+\begin{textblock}{160}(0,10)\centering
+ \includegraphics[width=1\textwidth]{static/cerebros_red.jpg}
+\end{textblock}
+}
+
+\only<3>{
+\begin{textblock}{160}(0,-16)
+\includegraphics[width=1\textwidth]{static/madre-chimpance.jpg}
+\end{textblock}
+
+\begin{textblock}{80}(80,4)
+ \centering \LARGE Crianza cooperativa \\
+ \Large Coevolución genético-cultural
+\end{textblock}
+
+}
+
+
+\only<1-2>{
+\begin{textblock}{160}(0,4)
+ \centering \LARGE La Inteligencia Humana \\ \large
+\only<1>{Hipótesis cognitiva}\only<2>{Hipótesis cultural}
+\end{textblock}
+}
+
+
+
+\end{frame}
+
 
 \begin{frame}[plain,noframenumbering]
 \centering \vspace{0.5cm}

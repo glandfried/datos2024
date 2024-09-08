@@ -1,5 +1,17 @@
-all: agua.jpg atomo_de_oxigeno.png Metodos2.png BP.png modelosGraficos.jpeg peligro_predador.jpeg fuego.jpg antartic.jpeg tsimane.jpg treeOfLife-liviano.png reciprocidad.jpeg regalo.png dedo.png cerradura.png deforestacion.jpg pachacuteckoricancha.jpg sidewalk_bubblegum_1997_4.png moneda-euro-liviana.png galton-board.jpg Elo1980.jpg boole.png sum_product.png test_chagas.png lifeHistory.jpeg biomassBarOn.png plata-potosi.jpg ttt_history.png python.png julia.png R.png cara-emoji.png cloroplastos.jpg fotosintesis.jpg hormigas2.jpg tsimane2.jpg messi_datos.jpeg
+all: mapa_icosaedro_blanco.png madre-chimpance.jpg agua.jpg atomo_de_oxigeno.png cerebros.jpg cerebros_red.jpg Metodos2.png BP.png modelosGraficos.jpeg peligro_predador.jpeg fuego.jpg antartic.jpeg tsimane.jpg treeOfLife-liviano.png reciprocidad.jpeg regalo.png dedo.png cerradura.png deforestacion.jpg pachacuteckoricancha.jpg sidewalk_bubblegum_1997_4.png moneda-euro-liviana.png galton-board.jpg Elo1980.jpg boole.png sum_product.png test_chagas.png lifeHistory.jpeg biomassBarOn.png plata-potosi.jpg ttt_history.png python.png julia.png R.png cara-emoji.png cloroplastos.jpg fotosintesis.jpg hormigas2.jpg tsimane2.jpg messi_datos.jpeg
 
+mapa_icosaedro_blanco.png:
+	wget https://raw.githubusercontent.com/glandfried/images/master/mapa_icosaedro_blanco.png -O mapa_icosaedro_blanco.png
+
+madre-chimpance.jpg:
+	wget https://raw.githubusercontent.com/glandfried/images/master/madre-chimpance.jpg -O madre-chimpance.jpg
+
+cerebros_red.jpg:
+	wget https://raw.githubusercontent.com/glandfried/images/master/cerebros_red.jpg -O cerebros_red.jpg
+
+
+cerebros.jpg:
+	wget https://raw.githubusercontent.com/glandfried/images/master/cerebros.jpg -O cerebros.jpg
 
 agua.jpg:
 	wget https://raw.githubusercontent.com/glandfried/images/master/agua.jpg -O agua.jpg
