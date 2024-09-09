@@ -253,7 +253,6 @@ emergen de la interacción entre sus partes
 
 }
 
-
 \only<1-2>{
 \begin{textblock}{160}(0,4)
  \centering \LARGE La Inteligencia Humana \\ \large
@@ -262,9 +261,347 @@ emergen de la interacción entre sus partes
 }
 
 
+\only<4-6>{
+ \begin{textblock}{150}(2,16)
+ \includegraphics[width=1\textwidth]{static/mapa_icosaedro_blanco.png}
+ \end{textblock}
+
+\only<5->{
+ \begin{textblock}{160}(100,43)
+  \tikz{%Norte-Sur
+    \node[const] (norte) {};
+    \node[const, xshift=0.8cm,yshift=0.75cm] (sur) {};
+    \path[draw, -latex, fill=black!50] (norte) edge[bend left,draw=black!50] node[right,color=black!75] {} (sur);
+  }
+ \end{textblock}
+}
+
+  \only<4->{
+ \begin{textblock}{160}(50,25)
+  \tikz{% Africa-Mundo
+    \node[const] (africa) {};
+    \node[const, xshift=0.55cm,yshift=-1.4cm] (asia) {};
+    \path[draw, -latex, fill=black!50] (africa) edge[bend left,draw=black!50] node[right,color=black!75] {} (asia);
+  }
+ \end{textblock}
+ }
+
+  \only<5->{
+ \begin{textblock}{160}(60,59)
+  \tikz{%China-America
+    \node[const] (asia) {};
+    \node[const, xshift=1.55cm,yshift=0cm] (america) {};
+    \path[draw, -latex, fill=black!50] (asia) edge[bend right,draw=black!50] node[right,color=black!75] {} (america);
+  }
+ \end{textblock}
+  }
+
+  \only<5->{
+ \begin{textblock}{160}(40,59)
+  \tikz{%China-Oceania
+    \node[const] (asia) {};
+    \node[const, xshift=-1.33cm,yshift=-1cm] (oceania) {};
+    \path[draw, -latex, fill=black!50] (asia) edge[bend right,draw=black!50] node[right,color=black!75] {} (oceania);
+  }
+ \end{textblock}
+  }
+
+
+%
+%  \begin{textblock}{128}(41,40)
+%   \tikz{%India
+%     \node[latent, fill=red,minimum size=0.15cm] () {};
+%   }
+%  \end{textblock}
+
+\only<6->{
+  \begin{textblock}{160}(112,42)
+  \tikz{%Peru
+    \node[latent, fill=red,minimum size=0.15cm] () {};
+  }
+ \end{textblock}
+ \begin{textblock}{160}(98,52.3)
+  \tikz{%Mexico
+    \node[latent, fill=red,minimum size=0.15cm] () {};
+  }
+ \end{textblock}
+ \begin{textblock}{160}(48,24)
+  \tikz{%Subshara
+    \node[latent, fill=red,minimum size=0.15cm] () {};
+  }
+ \end{textblock}
+ \begin{textblock}{160}(54,38)
+  \tikz{%Irak
+    \node[latent, fill=red,minimum size=0.15cm] () {};
+  }
+ \end{textblock}
+ \begin{textblock}{150}(56,59)
+  \tikz{%China
+    \node[latent, fill=red,minimum size=0.15cm] () {};
+  }
+ \end{textblock}
+ \begin{textblock}{150}(39,72)
+  \tikz{% Nueva Guinea
+    \node[latent, fill=red,minimum size=0.15cm] () {};
+  }
+ \end{textblock}
+}
+
+\begin{textblock}{160}(0,4)
+ \centering \LARGE La transición cultural \\ \large
+   \only<6>{Surgimiento de la agricultura}
+\end{textblock}
+
+}
+
+\only<7>{
+\begin{textblock}{191}(-16,0)
+ \centering
+ \includegraphics[width=1\textwidth]{static/terrazas_arroz_c.jpg}
+\end{textblock}
+
+ \begin{textblock}{120}(10,1)
+  \LARGE \textcolor{black!5}{Reciprocidad ecológica}\\
+ \end{textblock}
+
+ \begin{textblock}{70}(88,60)
+  \Large \textcolor{black!5}{Domesticación}\\
+ \end{textblock}
+}
+
+\only<8>{
+\begin{textblock}{95}(0,22) \centering
+\includegraphics[width=0.95\textwidth]{static/polynesia.png}
+\end{textblock}
+
+\begin{textblock}{60}(95,08.5) \centering
+\includegraphics[width=0.95\textwidth]{static/tonga_barco.jpg}
+\end{textblock}
+
+\begin{textblock}{160}(0,4)
+\centering \LARGE \textcolor{black!85}{Agricultura $\mapsto$ Aumento poblacional $\mapsto$ Centros de innovación }
+\end{textblock}
+}
 
 \end{frame}
 
+\begin{frame}[plain]
+\begin{textblock}{160}(0,4) \centering \LARGE
+Sistema de razonamiento \\ \large para contextos de incertidumbre
+\end{textblock}
+
+
+ \begin{textblock}{160}(0,68)
+ \centering \LARGE \only<2>{Certeza absoluta}\only<3>{Distribución de creencias \\ }\only<4>{Distribución de creencias \\ \Large Honesta }
+ \only<7>{¿Cómo preservamos los acuerdos intersubjetivos?\\}
+\end{textblock}
+\vspace{1.5cm}
+\centering
+
+
+\only<1>{
+\begin{textblock}{160}(0,62)
+\Large Detrás de una de estas caja hay un regalo. \\[0.1cm]
+
+\large ¿Dónde está el regalo?
+\end{textblock}
+}
+
+\only<1>{
+\begin{textblock}{160}(0,28)
+ \scalebox{1.1}{
+\tikz{ %
+         \node[factor, minimum size=1cm] (p1) {} ;
+         \node[factor, minimum size=1cm, xshift=1.5cm] (p2) {} ;
+         \node[factor, minimum size=1cm, xshift=3cm] (p3) {} ;
+
+
+         \node[const, above=of p1, yshift=0.1cm] (np1) {\Large $?$};
+         \node[const, above=of p2, yshift=0.1cm] (np2) {\Large $?$};
+         \node[const, above=of p3, yshift=0.1cm] (np3) {\Large $?$};
+         }
+}
+\end{textblock}
+}
+
+\only<2>{
+\begin{textblock}{160}(0,28)
+ \scalebox{1.1}{
+\tikz{ %
+         \node[factor, minimum size=1cm] (p1) {} ;
+         \node[factor, minimum size=1cm, xshift=1.5cm] (p2) {} ;
+         \node[factor, minimum size=1cm, xshift=3cm] (p3) {} ;
+
+
+         \node[const, above=of p1, yshift=0.125cm] (np1) {\Large $0$};
+         \node[const, above=of p2, yshift=0.125cm] (np2) {\Large $1$};
+         \node[const, above=of p3, yshift=0.125cm] (np3) {\Large $0$};
+         }
+}
+\end{textblock}
+}
+
+\only<3>{
+\begin{textblock}{160}(0,28)
+ \scalebox{1.1}{
+\tikz{ %
+         \node[factor, minimum size=1cm] (p1) {} ;
+         \node[factor, minimum size=1cm, xshift=1.5cm] (p2) {} ;
+         \node[factor, minimum size=1cm, xshift=3cm] (p3) {} ;
+
+
+         \node[const, above=of p1, yshift=-0.05cm] (np1) {\Large $1/10$};
+         \node[const, above=of p2, yshift=-0.05cm] (np2) {\Large $8/10$};
+         \node[const, above=of p3, yshift=-0.05cm] (np3) {\Large $1/10$};
+         }
+}
+\end{textblock}
+}
+
+
+\only<4-6>{
+\begin{textblock}{160}(0,28)
+ \scalebox{1.1}{
+\tikz{ %
+         \only<4-5>{\node[factor, minimum size=1cm] (p1) {} ;}
+         \only<6>{
+         \node[factor, minimum size=1cm] (p1) {\includegraphics[width=0.03\textwidth]{static/cerradura.png}} ;}
+         \node[factor, minimum size=1cm, xshift=1.5cm] (p2) {} ;
+         \node[factor, minimum size=1cm, xshift=3cm] (p3) {} ;
+
+
+         \node[const, above=of p1, yshift=-0.05cm] (np1) {\Large $1/3$};
+         \node[const, above=of p2, yshift=-0.05cm] (np2) {\Large $1/3$};
+         \node[const, above=of p3, yshift=-0.05cm] (np3) {\Large $1/3$};
+         }
+}
+\end{textblock}
+}
+
+\only<5-6>{
+\begin{textblock}{150}(10,64)   \centering \Large
+No mentir\\[0.1cm]
+\large 1. \textbf{No asegurar más de lo que sabés} (dividiendo en partes iguales) \\
+\large 2. \textbf{Sin ocultar lo que sí sabés} (no asignando creencia por fuera de las cajas)
+\end{textblock}
+}
+
+\only<7>{
+\begin{textblock}{160}(0,28)
+ \scalebox{1.1}{
+\tikz{ %
+         \node[factor, minimum size=1cm] (p1) {\includegraphics[width=0.03\textwidth]{static/cerradura.png}} ;
+         \node[det, minimum size=1cm, xshift=1.5cm] (p2) {\includegraphics[width=0.03\textwidth]{static/dedo.png}} ;
+         \node[factor, minimum size=1cm, xshift=3cm] (p3) {} ;
+
+
+         \node[const, above=of p1, yshift=-0.05cm] (np1) {\Large $\phantom{/}?\phantom{/}$};
+         \node[const, above=of p2, yshift=-0.05cm] (np2) {\Large $\phantom{/}0\phantom{/}$};
+         \node[const, above=of p3, yshift=-0.05cm] (np3) {\Large $\phantom{/}?\phantom{/}$};
+         }
+}
+\end{textblock}
+}
+
+
+\only<8-9>{
+
+\begin{textblock}{80}(0,19)
+\centering
+\tikz{
+    \node[invisible] (id) {};
+    \node[latent, left=of id, xshift=0cm] (d) {\includegraphics[width=0.10\textwidth]{static/dedo.png}} ;
+    %\node[const,left=of d] (nd) {\Large $P(s|r)$} ;
+    \node[const, below=of d, yshift=0cm] (restricciones) {$s \neq r$};
+
+
+    \node[latent, above=of d, xshift=-1.5cm] (r) {\includegraphics[width=0.12\textwidth]{static/regalo.png}} ;
+    %\node[const,left=of r] (nr) {\Large $P(r)$} ;
+
+
+    \node[latent, fill=black!30, above=of d, xshift=1.5cm] (c) {\includegraphics[width=0.12\textwidth]{static/cerradura.png}} ;
+    %\node[const,left=of c] (nc) {\Large $P(c)$} ;
+
+    \edge {r} {d};
+
+    %\node[invisible, right=of c, xshift=0.6cm, yshift=0.65cm] (ic) {};
+
+}
+
+\vspace{0.5cm}
+\tikz{
+         \node[factor, minimum size=1cm] (p1) {\includegraphics[width=0.07\textwidth]{static/cerradura.png}} ;
+         \node[det, minimum size=1cm, xshift=1.5cm] (p2) {\includegraphics[width=0.07\textwidth]{static/dedo.png}} ;
+         \node[factor, minimum size=1cm, xshift=3cm] (p3) {} ;
+
+         \node[const, above=of p1, yshift=.1cm] (fp1) {$1/2$};
+         \node[const, above=of p2, yshift=.1cm] (fp2) {$\phantom{/}0\phantom{/}$};
+         \node[const, above=of p3, yshift=.1cm] (fp3) {$1/2$};
+         \node[const, below=of p2, yshift=-.10cm, xshift=0.3cm] (dedo) {};
+}
+\end{textblock}
+}
+
+\only<9>{
+\begin{textblock}{80}(80,19)
+\centering
+\tikz{
+    \node[invisible] (id) {};
+    \node[latent, left=of id, xshift=0cm] (d) {\includegraphics[width=0.10\textwidth]{static/dedo.png}} ;
+    %\node[const,left=of d] (nd) {\Large $P(s_{_{\only<-2>{\phantom}{t}}}|r_{_{\only<-2>{\phantom}{t}}},c_{_{\only<-2>{\phantom}{t}}})$} ;
+    \node[const, below=of d, yshift=-0cm] (restricciones) {$s \neq r \text{, } s \neq c$};
+
+
+    \node[latent, above=of d, xshift=-1.5cm] (r) {\includegraphics[width=0.12\textwidth]{static/regalo.png}} ;
+    %\node[const,left=of r] (nr) {\Large $P(r_{_{\only<-2>{\phantom}{t}}})$} ;
+
+
+    \node[latent, fill=black!30, above=of d, xshift=1.5cm] (c) {\includegraphics[width=0.12\textwidth]{static/cerradura.png}} ;
+    %\node[const,left=of c] (nc) {\Large $P(c_{_{\only<-2>{\phantom}{t}}})$} ;
+
+    %\node[invisible, right=of c, xshift=0.6cm, yshift=0.65cm] (ic) {};
+
+    \edge {r,c} {d};
+    %\onslide<3->{\plate {episodio} {(d)(ic)(nr)} {$t$ : Episodio};}
+}
+
+\vspace{0.5cm}
+ \tikz{
+         \node[factor, minimum size=1cm] (p1) {\includegraphics[width=0.07\textwidth]{static/cerradura.png}} ;
+         \node[det, minimum size=1cm, xshift=1.5cm] (p2) {\includegraphics[width=0.07\textwidth]{static/dedo.png}} ;
+         \node[factor, minimum size=1cm, xshift=3cm] (p3) {} ;
+
+         \node[const, above=of p1, yshift=.1cm] (fp1) {$1/3$};
+         \node[const, above=of p2, yshift=.1cm] (fp2) {$\phantom{/}0\phantom{/}$};
+         \node[const, above=of p3, yshift=.1cm] (fp3) {$2/3$};
+         \node[const, below=of p2, yshift=-.10cm, xshift=0.3cm] (dedo) {};
+}
+\end{textblock}
+}
+
+
+
+\only<10->{
+\begin{textblock}{160}(0,26)  \centering
+\begin{align*}
+\onslide<12->{\underbrace{P(\text{Argumento causal}, \text{Dato})}_{\hfrac{\text{\small \phantom{p}Creencia inicial\phantom{p}}}{\text{\small compatible con el dato} }} =} \onslide<10->{\underbrace{P(\text{Argumento causal})}_{\hfrac{\text{\small \phantom{p}Creencia inicial\phantom{p}}}{\text{\small}}}} \onslide<11->{ \underbrace{P(\text{Dato}|\text{Argumento causal})}_{\hfrac{\text{\small \phantom{p}Predicción del dato\phantom{p}}}{\text{\small que realiza el argumento causal} }}}
+\end{align*}
+\end{textblock}
+}
+
+
+\only<13->{
+\begin{textblock}{160}(0,60)  \centering
+\begin{align*}
+ P(\text{Dato}|\text{Argumento causal}) =  \onslide<14>{\sum_{h}^{\text{Hipótesis}} \underbrace{P(\text{Dato}|h,\text{Argumento causal})}_{\text{Predicción de sus hipótesis internas}} \underbrace{P(h|\text{Argumento causal})}_{\text{Creencia en sus hipótesis}}}
+\end{align*}
+%\hfrac{\text{\footnotesize \phantom{p}Predicción de sus\phantom{p}} }{\text{\footnotesize hipótesis internas}}}
+\end{textblock}
+}
+
+
+
+\end{frame}
 
 \begin{frame}[plain,noframenumbering]
 \centering \vspace{0.5cm}
