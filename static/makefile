@@ -1,4 +1,11 @@
-all:  tonga_barco.jpg polynesia.png terrazas_arroz_c.jpg mapa_icosaedro_blanco.png madre-chimpance.jpg agua.jpg atomo_de_oxigeno.png cerebros.jpg cerebros_red.jpg Metodos2.png BP.png modelosGraficos.jpeg peligro_predador.jpeg fuego.jpg antartic.jpeg tsimane.jpg treeOfLife-liviano.png reciprocidad.jpeg regalo.png dedo.png cerradura.png deforestacion.jpg pachacuteckoricancha.jpg sidewalk_bubblegum_1997_4.png moneda-euro-liviana.png galton-board.jpg Elo1980.jpg boole.png sum_product.png test_chagas.png lifeHistory.jpeg biomassBarOn.png plata-potosi.jpg ttt_history.png python.png julia.png R.png cara-emoji.png cloroplastos.jpg fotosintesis.jpg hormigas2.jpg tsimane2.jpg messi_datos.jpeg
+all: chatGPT.jpeg tasamnia.jpg tonga_barco.jpg polynesia.png terrazas_arroz_c.jpg mapa_icosaedro_blanco.png madre-chimpance.jpg agua.jpg atomo_de_oxigeno.png cerebros.jpg cerebros_red.jpg Metodos2.png BP.png modelosGraficos.jpeg peligro_predador.jpeg fuego.jpg antartic.jpeg tsimane.jpg treeOfLife-liviano.png reciprocidad.jpeg regalo.png dedo.png cerradura.png deforestacion.jpg pachacuteckoricancha.jpg sidewalk_bubblegum_1997_4.png moneda-euro-liviana.png galton-board.jpg Elo1980.jpg boole.png sum_product.png test_chagas.png lifeHistory.jpeg biomassBarOn.png plata-potosi.jpg ttt_history.png python.png julia.png R.png cara-emoji.png cloroplastos.jpg fotosintesis.jpg hormigas2.jpg tsimane2.jpg messi_datos.jpeg
+
+
+chatGPT.jpeg:
+	wget https://raw.githubusercontent.com/glandfried/images/master/chatGPT.jpeg
+
+tasmania.jpg:
+	wget https://raw.githubusercontent.com/glandfried/images/master/tasmania.jpg
 
 tonga_barco.jpg:
 	wget https://raw.githubusercontent.com/glandfried/images/master/tonga_barco.jpg

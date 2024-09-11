@@ -271,7 +271,7 @@ emergen de la interacción entre sus partes
   \tikz{%Norte-Sur
     \node[const] (norte) {};
     \node[const, xshift=0.8cm,yshift=0.75cm] (sur) {};
-    \path[draw, -latex, fill=black!50] (norte) edge[bend left,draw=black!50] node[right,color=black!75] {} (sur);
+    \path[draw, line width=0.08cm, -latex, fill=black!50] (norte) edge[bend left,draw=black!50] node[right,color=black!75] {} (sur);
   }
  \end{textblock}
 }
@@ -281,7 +281,7 @@ emergen de la interacción entre sus partes
   \tikz{% Africa-Mundo
     \node[const] (africa) {};
     \node[const, xshift=0.55cm,yshift=-1.4cm] (asia) {};
-    \path[draw, -latex, fill=black!50] (africa) edge[bend left,draw=black!50] node[right,color=black!75] {} (asia);
+    \path[draw, line width=0.08cm, -latex, fill=black!50] (africa) edge[bend left,draw=black!50] node[right,color=black!75] {} (asia);
   }
  \end{textblock}
  }
@@ -291,7 +291,7 @@ emergen de la interacción entre sus partes
   \tikz{%China-America
     \node[const] (asia) {};
     \node[const, xshift=1.55cm,yshift=0cm] (america) {};
-    \path[draw, -latex, fill=black!50] (asia) edge[bend right,draw=black!50] node[right,color=black!75] {} (america);
+    \path[draw, line width=0.08cm, -latex, fill=black!50] (asia) edge[bend right,draw=black!50] node[right,color=black!75] {} (america);
   }
  \end{textblock}
   }
@@ -301,7 +301,7 @@ emergen de la interacción entre sus partes
   \tikz{%China-Oceania
     \node[const] (asia) {};
     \node[const, xshift=-1.33cm,yshift=-1cm] (oceania) {};
-    \path[draw, -latex, fill=black!50] (asia) edge[bend right,draw=black!50] node[right,color=black!75] {} (oceania);
+    \path[draw, line width=0.08cm, -latex, fill=black!50] (asia) edge[bend right,draw=black!50] node[right,color=black!75] {} (oceania);
   }
  \end{textblock}
   }
@@ -348,58 +348,85 @@ emergen de la interacción entre sus partes
 }
 
 \begin{textblock}{160}(0,4)
- \centering \LARGE La transición cultural \\ \large
-   \only<6>{Surgimiento de la agricultura}
+ \centering \LARGE La Inteligencia Humana\\ \large
+   \only<1->{Emergió de la \textbf{interacción} cultural}
 \end{textblock}
 
 }
 
-\only<7>{
-\begin{textblock}{191}(-16,0)
- \centering
- \includegraphics[width=1\textwidth]{static/terrazas_arroz_c.jpg}
-\end{textblock}
-
- \begin{textblock}{120}(10,1)
-  \LARGE \textcolor{black!5}{Reciprocidad ecológica}\\
- \end{textblock}
-
- \begin{textblock}{70}(88,60)
-  \Large \textcolor{black!5}{Domesticación}\\
- \end{textblock}
-}
-
-\only<8>{
-\begin{textblock}{95}(0,22) \centering
-\includegraphics[width=0.95\textwidth]{static/polynesia.png}
-\end{textblock}
-
-\begin{textblock}{60}(95,08.5) \centering
-\includegraphics[width=0.95\textwidth]{static/tonga_barco.jpg}
-\end{textblock}
-
-\begin{textblock}{160}(0,4)
-\centering \LARGE \textcolor{black!85}{Agricultura $\mapsto$ Aumento poblacional $\mapsto$ Centros de innovación }
-\end{textblock}
-}
+% \only<7>{
+% \begin{textblock}{191}(-16,0)
+%  \centering
+%  \includegraphics[width=1\textwidth]{static/terrazas_arroz_c.jpg}
+% \end{textblock}
+%
+%  \begin{textblock}{120}(10,1)
+%   \LARGE \textcolor{black!5}{Reciprocidad ecológica}\\
+%  \end{textblock}
+%
+%  \begin{textblock}{70}(88,60)
+%   \Large \textcolor{black!5}{Domesticación}\\
+%  \end{textblock}
+% }
+%
+% \only<8>{
+% \begin{textblock}{95}(62,22) \centering
+% \includegraphics[width=0.95\textwidth]{static/polynesia.png}
+% \end{textblock}
+%
+% \begin{textblock}{60}(04,08.2) \centering
+% \includegraphics[width=0.95\textwidth]{static/tonga_barco.jpg}
+% \end{textblock}
+%
+% \begin{textblock}{160}(0,4)
+% \centering \LARGE \textcolor{black!85}{Agricultura $\mapsto$ Aumento poblacional $\mapsto$ Centros de innovación }
+% \end{textblock}
+% }
+%
+%
+% \only<9>{
+% \begin{textblock}{140}(10,22) \centering
+% \includegraphics[width=0.7\textwidth]{static/tasmania.jpg}
+% \end{textblock}
+% }
 
 \end{frame}
 
 \begin{frame}[plain]
+
+% \only<1>{
+% \begin{textblock}{160}(0,0)
+% \includegraphics[width=1\textwidth]{static/pizarron.jpg}
+% \end{textblock}
+% }
+
 \begin{textblock}{160}(0,4) \centering \LARGE
-Sistema de razonamiento \\ \large para contextos de incertidumbre
+\only<17->{\hspace{0.19cm}} La Inteligencia \only<-16>{Humana}\only<17->{\textbf{Artificial}} \\ \large Probabilidad
 \end{textblock}
 
 
  \begin{textblock}{160}(0,68)
- \centering \LARGE \only<2>{Certeza absoluta}\only<3>{Distribución de creencias \\ }\only<4>{Distribución de creencias \\ \Large Honesta }
- \only<7>{¿Cómo preservamos los acuerdos intersubjetivos?\\}
+ \centering \LARGE \only<3>{Certeza absoluta}\only<4>{Distribución de creencias \\ }\only<5>{Distribución de creencias \\ \Large Honesta }
+ \only<9>{¿Cómo preservamos los acuerdos intersubjetivos?\\}
 \end{textblock}
 \vspace{1.5cm}
 \centering
 
-
 \only<1>{
+\begin{textblock}{160}(0,32) \Large
+\begin{align*}
+P(\text{Hipótesis}|\text{Datos})
+\end{align*}
+
+\vspace{1.3cm}
+
+\textbf{Sistema de razonamiento en contextos de incertidumbre}
+
+\end{textblock}
+}
+
+
+\only<2>{
 \begin{textblock}{160}(0,62)
 \Large Detrás de una de estas caja hay un regalo. \\[0.1cm]
 
@@ -407,7 +434,7 @@ Sistema de razonamiento \\ \large para contextos de incertidumbre
 \end{textblock}
 }
 
-\only<1>{
+\only<2>{
 \begin{textblock}{160}(0,28)
  \scalebox{1.1}{
 \tikz{ %
@@ -424,7 +451,7 @@ Sistema de razonamiento \\ \large para contextos de incertidumbre
 \end{textblock}
 }
 
-\only<2>{
+\only<3>{
 \begin{textblock}{160}(0,28)
  \scalebox{1.1}{
 \tikz{ %
@@ -441,7 +468,7 @@ Sistema de razonamiento \\ \large para contextos de incertidumbre
 \end{textblock}
 }
 
-\only<3>{
+\only<4>{
 \begin{textblock}{160}(0,28)
  \scalebox{1.1}{
 \tikz{ %
@@ -459,12 +486,12 @@ Sistema de razonamiento \\ \large para contextos de incertidumbre
 }
 
 
-\only<4-6>{
+\only<5-8>{
 \begin{textblock}{160}(0,28)
  \scalebox{1.1}{
 \tikz{ %
-         \only<4-5>{\node[factor, minimum size=1cm] (p1) {} ;}
-         \only<6>{
+         \only<5-7>{\node[factor, minimum size=1cm] (p1) {} ;}
+         \only<8>{
          \node[factor, minimum size=1cm] (p1) {\includegraphics[width=0.03\textwidth]{static/cerradura.png}} ;}
          \node[factor, minimum size=1cm, xshift=1.5cm] (p2) {} ;
          \node[factor, minimum size=1cm, xshift=3cm] (p3) {} ;
@@ -478,15 +505,15 @@ Sistema de razonamiento \\ \large para contextos de incertidumbre
 \end{textblock}
 }
 
-\only<5-6>{
+\only<6-8>{
 \begin{textblock}{150}(10,64)   \centering \Large
 No mentir\\[0.1cm]
-\large 1. \textbf{No asegurar más de lo que sabés} (dividiendo en partes iguales) \\
-\large 2. \textbf{Sin ocultar lo que sí sabés} (no asignando creencia por fuera de las cajas)
+\large 1. \textbf{No asegurar más de lo que sabés} (maximizar incertidumbre) \\
+\only<7->{\large 2. \textbf{Sin ocultar lo que sí sabés} (dada la información disponible)}
 \end{textblock}
 }
 
-\only<7>{
+\only<9>{
 \begin{textblock}{160}(0,28)
  \scalebox{1.1}{
 \tikz{ %
@@ -504,7 +531,7 @@ No mentir\\[0.1cm]
 }
 
 
-\only<8-9>{
+\only<10-11>{
 
 \begin{textblock}{80}(0,19)
 \centering
@@ -542,7 +569,7 @@ No mentir\\[0.1cm]
 \end{textblock}
 }
 
-\only<9>{
+\only<11>{
 \begin{textblock}{80}(80,19)
 \centering
 \tikz{
@@ -581,27 +608,300 @@ No mentir\\[0.1cm]
 
 
 
-\only<10->{
-\begin{textblock}{160}(0,26)  \centering
+\only<12-18>{
+\begin{textblock}{160}(0,23)  \centering
 \begin{align*}
-\onslide<12->{\underbrace{P(\text{Argumento causal}, \text{Dato})}_{\hfrac{\text{\small \phantom{p}Creencia inicial\phantom{p}}}{\text{\small compatible con el dato} }} =} \onslide<10->{\underbrace{P(\text{Argumento causal})}_{\hfrac{\text{\small \phantom{p}Creencia inicial\phantom{p}}}{\text{\small}}}} \onslide<11->{ \underbrace{P(\text{Dato}|\text{Argumento causal})}_{\hfrac{\text{\small \phantom{p}Predicción del dato\phantom{p}}}{\text{\small que realiza el argumento causal} }}}
+\onslide<14->{\underbrace{P\left(\hfrac{\text{Modelo}}{\text{causal}}, \ \hfrac{\text{Datos}}{\{d_1, d_2, \dots \}} \right)}_{\hfrac{\textbf{\small Creencia compatible}}{\textbf{\small con los datos} }} =} \onslide<12->{\underbrace{P\left(\hfrac{\text{Modelo}}{\text{causal}}\right)}_{\hfrac{\text{\small \phantom{p}Creencia inicial\phantom{p}}}{\text{\small}}}} \onslide<13->{ \underbrace{P\left(d_1\bigg|\hfrac{\text{Modelo}}{\text{causal}}\right)P\left(d_2\bigg|d_1,\hfrac{\text{Modelo}}{\text{causal}}\right) \dots}_{\hfrac{\text{\small \only<15->{\textbf}{\phantom{p}Secuencia de predicciones\phantom{p}}}}{\text{\small \only<15->{\textbf}{realizada por el modelo causal}} }}}
 \end{align*}
 \end{textblock}
 }
 
 
-\only<13->{
-\begin{textblock}{160}(0,60)  \centering
-\begin{align*}
- P(\text{Dato}|\text{Argumento causal}) =  \onslide<14>{\sum_{h}^{\text{Hipótesis}} \underbrace{P(\text{Dato}|h,\text{Argumento causal})}_{\text{Predicción de sus hipótesis internas}} \underbrace{P(h|\text{Argumento causal})}_{\text{Creencia en sus hipótesis}}}
-\end{align*}
+\only<15>{
+\begin{textblock}{160}(0,60)  \centering \Large
+Un cero en la secuencia de predicciones \\
+
+hace falso al modelo causal para siempre.
+\end{textblock}
+}
+%
+\only<16>{
+\begin{textblock}{120}(30,56)  \centering
+\begin{flalign*}
+ &P\left(d_1\bigg|\hfrac{\text{Modelo}}{\text{causal}}\right) =  \onslide<16>{\underbrace{\underset{\hfrac{\text{Hipótesis}}{\text{(en modelo causal)}}}{\text{Suma}}(\ P(d_1|\text{Hipótesis})P(\text{Hipótesis}) \ )}_{\hfrac{\text{\small \phantom{p}Predicción con la contribución\phantom{p}}}{\text{\small de todas sus hipótesis internas}} }} &&
+\end{flalign*}
 %\hfrac{\text{\footnotesize \phantom{p}Predicción de sus\phantom{p}} }{\text{\footnotesize hipótesis internas}}}
+\end{textblock}
+}
+
+\only<17-18>{
+\begin{textblock}{120}(30,56)  \centering
+\begin{flalign*}
+ & P\left(d_1\bigg|\hfrac{\text{Modelo}}{\text{causal}}\right) = \hspace{2.23cm} P(d_1|\text{Hipótesis}) &&
+\end{flalign*}
+\end{textblock}
+}
+\only<18>{
+\begin{textblock}{160}(0,78)  \centering \Large
+\textbf{Selecciona arbitrariamente una única hipótesis}
+\end{textblock}
+}
+
+
+\only<19>{
+\begin{textblock}{160}(0,36)  \centering \Large
+Si nos va mejor en el entrenamiento \\ nos debería ir mejor en la evaluación
+\end{textblock}
+}
+
+
+\only<20>{
+\begin{textblock}{160}(0,22)  \centering
+\textbf{Efectos secundarios indeseados}
+
+\includegraphics[width=0.7\textwidth]{code/overfitting.pdf}
+\end{textblock}
+}
+
+
+\end{frame}
+
+\begin{frame}[plain]
+\begin{textblock}{160}(0,4)  \centering \LARGE
+La Inteligencia de la Vida\\ \large
+ \only<1-3>{Evolución}\only<4->{Apuestas de vida}
+\end{textblock}
+
+\only<1-3>{
+\begin{equation*}
+\underbrace{\text{P}(\text{Variante},\text{\En{Data}\Es{Datos}})}_{\hfrac{\text{\footnotesize\En{Initial belief compatible}\Es{Tamaño actual}}}{\text{\footnotesize \En{with the data}\Es{de la población}}}} = \underbrace{\text{P}(\text{Variante})}_{\hfrac{\text{\footnotesize\En{Initial intersubjective}\Es{Tamaño inicial}}}{\text{\footnotesize\En{agreement}\Es{de la población}}}} \underbrace{\text{ R}(\text{dato}_1|\text{Variante})}_{\text{\footnotesize Reproducción $\geq 1$}} \, \underbrace{\text{ S}(\text{dato}_2|\text{dato}_1,\text{Variante}) }_{\text{\footnotesize $0 \leq$ Supervivencia $\leq 1$  }} \dots
+\end{equation*}
+}
+
+\only<2-3>{
+\begin{textblock}{160}(0,60) \centering \Large
+Un 0 en la secuencia de tasas de reproducción y
+
+supervivencia produce una extinción irreversible
+
+\vspace{0.6cm}
+
+\only<3>{
+\textbf{¿Cuáles son las variantes que más crecen?}
+}
+\end{textblock}
+}
+
+
+
+\only<4-13>{
+\begin{textblock}{150}(05,32)
+Casa de apuestas paga: \\[0.2cm] \normalsize
+
+\ \ $\bullet$ Por \textbf{Cara}. $Q_c = 3$
+
+\ \ $\bullet$ Por \textbf{Sello}. $Q_s = 1.2$
+
+\vspace{0.3cm} \large
+
+Invertimos nuestra energía\\[0.2cm] \normalsize
+
+\ \ $\bullet$ A \textbf{Cara}. $b\only<4-5>{\in [0,1]}\only<6->{=0.5}$
+
+\ \ $\bullet$ A \textbf{Sello}. $(1-b)$
+
+
+\end{textblock}
+}
+
+
+\only<4>{
+\begin{textblock}{95}(60,32)
+\raggedleft
+\includegraphics[width=0.82\textwidth]{static/plata-potosi.jpg}
+\end{textblock}
+}
+
+\only<5-6>{
+\begin{textblock}{95}(60,36) \centering \Large
+Si invertimos todo a una opción y sale \\
+
+la otra, perdemos todos los recursos \\
+
+\only<6>{
+\vspace{1cm}
+
+¡Tenemos que diversificar!
+
+($b=0.5$)
+
+}
+\end{textblock}
+}
+
+\only<7>{
+\begin{textblock}{105}(50,36) \centering \Large
+\begin{flalign*}
+& \text{Si sale Cara: } 50 \cdot Q_c = 150 \text{ \ \ \ 50\%} \\
+& \text{Si sale Sello: }50 \cdot Q_s = 60 \text{ \ \ \  -40\%}
+\end{flalign*}
+\end{textblock}
+}
+
+\only<8>{
+\begin{textblock}{95}(60,24) \centering \Large
+\includegraphics[page=6,width=1\textwidth]{code/apuestasParalelas.pdf}
+\end{textblock}
+}
+\only<9>{
+\begin{textblock}{95}(60,24) \centering \Large
+\includegraphics[page=7,width=1\textwidth]{code/apuestasParalelas.pdf}
+\end{textblock}
+}
+\only<10>{
+\begin{textblock}{95}(60,24) \centering \Large
+\includegraphics[page=8,width=1\textwidth]{code/apuestasParalelas.pdf}
+\end{textblock}
+}
+\only<11>{
+\begin{textblock}{95}(60,24) \centering \Large
+\includegraphics[page=10,width=1\textwidth]{code/apuestasParalelas.pdf}
+\end{textblock}
+}
+\only<12>{
+\begin{textblock}{95}(60,24) \centering \Large
+\includegraphics[page=11,width=1\textwidth]{code/apuestasParalelas.pdf}
+\end{textblock}
+}
+\only<13->{
+\begin{textblock}{95}(60,24) \centering \Large
+\includegraphics[page=13,width=1\textwidth]{code/apuestasParalelas.pdf}
+\end{textblock}
+}
+
+\only<14->{
+\begin{textblock}{60}(0,42) \centering \Large
+Los impactos de las caídas \\
+
+son difíciles de recuperar \\[0.1cm] \large
+
+(de la extinción no se vuelve)
+\end{textblock}
+}
+
+\end{frame}
+
+
+
+\begin{frame}[plain]
+\begin{textblock}{160}(0,4)
+\centering \LARGE La estrategia de la vida \\
+\large La cooperación
+\end{textblock}
+
+
+
+\only<1-6>{
+\begin{textblock}{160}(0,22) \centering \Large
+
+
+La emergencia de unidades cooperativas de
+
+nivel superior es un fenómeno permanente
+
+\vspace{0.8cm} \large
+
+\only<2-6>{
+Nuestra propia vida depende de al menos 4 niveles:
+\begin{figure}[H]
+\centering
+ \begin{subfigure}[b]{0.25\textwidth} \centering
+ \onslide<3->{\includegraphics[width=1\linewidth]{static/cloroplastos.jpg}
+  \caption*{\En{Eukaryotic cells}\Es{Células eucariota}}}
+  \end{subfigure}
+ \begin{subfigure}[b]{0.23\textwidth} \centering
+  \onslide<4->{\includegraphics[width=1\linewidth]{static/fotosintesis.jpg}
+  \caption*{\En{Organisms}\Es{Organismos}}}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.235\textwidth} \centering
+ \onslide<5->{\includegraphics[width=1\linewidth]{static/hormigas2.jpg}
+  \caption*{\En{Societies}\Es{Sociedades}}}
+ \end{subfigure}
+ \begin{subfigure}[b]{0.235\textwidth} \centering
+ \onslide<6->{\includegraphics[width=1\linewidth]{static/tsimane2.jpg}
+  \caption*{\En{Ecosystems}\Es{Ecosistemas}}}
+ \end{subfigure}
+\end{figure}
+}
+\end{textblock}
+}
+
+
+\only<7>{
+\begin{textblock}{160}(0,24)
+\centering
+  \begin{tabular}{|l|c|c|c|c|c|}
+     \hline
+         & {\small $t=0$} & {\small \  $\Delta$}  & {\small \, $t=1$ } & {\small \  $\Delta$}  & {\small \,  $t=2$ }  \\ \hline \hline
+        A no-coop& $1$ &  \ 50\% &  $1.5$ &  -40\%  & $\bm{0.9}$ \\ \hline
+        B no-coop & $1$ & -40\% & $0.6$ & \ 50\%  & $\bm{0.9}$ \\ \hline
+\end{tabular}
+\end{textblock}
+}
+
+\only<8>{
+\begin{textblock}{160}(0,24)
+\centering
+  \begin{tabular}{|l|c|c|c|c|c|}
+     \hline
+         & {\small $t=0$} & {\small \  $\Delta$}  & {\small \, $t=1$ } & {\small \  $\Delta$}  & {\small \,  $t=2$ }  \\ \hline \hline
+        A no-coop& $1$ & \ 50\% &  $1.5$ & -40\% & $\bm{0.9}$ \\ \hline
+        B no-coop & $1$ &  -40\% & $0.6$ & \ 50\% & $\bm{0.9}$ \\ \hline\hline
+        A coop & $1$ & \ 50\% & $1.05$ & -40\% & $\bm{1.1}$ \\ \hline
+        B coop & $1$ & -40\% & $1.05$ & \ 50\% & $\bm{1.1}$\\ \hline
+\end{tabular}
+\end{textblock}
+}
+
+
+\only<9>{
+\begin{textblock}{100}(30,20) \centering
+\includegraphics[page=10,width=1\textwidth]{figuras/apuestasParalelas.pdf}
+\end{textblock}
+}
+
+\only<9>{
+\begin{textblock}{100}(130,22)
+Cooperación
+\end{textblock}
+}
+\only<9>{
+\begin{textblock}{100}(130,68)
+Individual
 \end{textblock}
 }
 
 
 
 \end{frame}
+
+
+
+%
+% \begin{frame}[plain]
+% \only<1>{
+% \begin{textblock}{160}(-05,0)  \centering
+% \includegraphics[width=1.1\textwidth]{static/chatGPT.jpeg}
+% \end{textblock}
+% }
+% \begin{textblock}{160}(0,4)  \centering \LARGE
+% \only<1>{\textcolor{white}{Inteligencia Artificial}}%
+% \only<2>{Inteligencia Artificial}
+% \end{textblock}
+%
+%
+
+% \end{frame}
 
 \begin{frame}[plain,noframenumbering]
 \centering \vspace{0.5cm}
