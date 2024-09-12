@@ -1,4 +1,29 @@
-all: chatGPT.jpeg tasamnia.jpg tonga_barco.jpg polynesia.png terrazas_arroz_c.jpg mapa_icosaedro_blanco.png madre-chimpance.jpg agua.jpg atomo_de_oxigeno.png cerebros.jpg cerebros_red.jpg Metodos2.png BP.png modelosGraficos.jpeg peligro_predador.jpeg fuego.jpg antartic.jpeg tsimane.jpg treeOfLife-liviano.png reciprocidad.jpeg regalo.png dedo.png cerradura.png deforestacion.jpg pachacuteckoricancha.jpg sidewalk_bubblegum_1997_4.png moneda-euro-liviana.png galton-board.jpg Elo1980.jpg boole.png sum_product.png test_chagas.png lifeHistory.jpeg biomassBarOn.png plata-potosi.jpg ttt_history.png python.png julia.png R.png cara-emoji.png cloroplastos.jpg fotosintesis.jpg hormigas2.jpg tsimane2.jpg messi_datos.jpeg
+all: egipto5.jpeg chaco1984.jpg chaco2022.jpg genocidio_patagonia.jpg africa.png scienceAndCivilizationChina2.jpg mapaMundial.jpg chatGPT.jpeg tasamnia.jpg tonga_barco.jpg polynesia.png terrazas_arroz_c.jpg mapa_icosaedro_blanco.png madre-chimpance.jpg agua.jpg atomo_de_oxigeno.png cerebros.jpg cerebros_red.jpg Metodos2.png BP.png modelosGraficos.jpeg peligro_predador.jpeg fuego.jpg antartic.jpeg tsimane.jpg treeOfLife-liviano.png reciprocidad.jpeg regalo.png dedo.png cerradura.png deforestacion.jpg pachacuteckoricancha.jpg sidewalk_bubblegum_1997_4.png moneda-euro-liviana.png galton-board.jpg Elo1980.jpg boole.png sum_product.png test_chagas.png lifeHistory.jpeg biomassBarOn.png plata-potosi.jpg ttt_history.png python.png julia.png R.png cara-emoji.png cloroplastos.jpg fotosintesis.jpg hormigas2.jpg tsimane2.jpg messi_datos.jpeg
+
+egipto5.jpeg:
+	wget https://raw.githubusercontent.com/glandfried/images/master/egipto1.jpeg
+	wget https://raw.githubusercontent.com/glandfried/images/master/egipto2.jpeg
+	wget https://raw.githubusercontent.com/glandfried/images/master/egipto3.jpeg
+	wget https://raw.githubusercontent.com/glandfried/images/master/egipto4.jpeg
+	wget https://raw.githubusercontent.com/glandfried/images/master/egipto5.jpeg
+
+chaco1984.jpg:
+	wget https://raw.githubusercontent.com/glandfried/images/master/chaco1984.jpg
+
+chaco2022.jpg:
+	wget https://raw.githubusercontent.com/glandfried/images/master/chaco2022.jpg
+
+genocidio_patagonia.jpg:
+	wget https://raw.githubusercontent.com/glandfried/images/master/genocidio_patagonia.jpg
+
+africa.png:
+	wget https://raw.githubusercontent.com/glandfried/images/master/africa.png
+
+scienceAndCivilizationChina2.jpg:
+	wget https://raw.githubusercontent.com/glandfried/images/master/scienceAndCivilizationChina2.jpg
+
+mapaMundial.jpg:
+	wget https://raw.githubusercontent.com/glandfried/images/master/mapaMundial.jpg
 
 
 chatGPT.jpeg:
